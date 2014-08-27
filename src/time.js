@@ -57,13 +57,13 @@ var timejs = {
 			if (number === 1)
 				return one;
 			if (number % 10 === 1 && number % 100 !== 11)
-				return number + ' ' + one;
+				return number + ' ' + one;
 			if (number % 10 > 1 && number % 10 < 5 && (number % 100 < 12 || number % 100 > 14))
-				return number + ' ' + few;
+				return number + ' ' + few;
 			if (number % 10 === 0 || number % 10 > 4 || (number % 100 > 10 && number % 100 < 15))
-				return number + ' ' + many;
+				return number + ' ' + many;
 				
-			return number + ' ' + other;
+			return number + ' ' + other;
 		},
 		minutes: function (_minutes) {
 			return this.plural(_minutes, 'минуту', 'минуты', 'минут', 'минуты');
